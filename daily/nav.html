@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cantenar{
+            width: 300px;
+            border: 1px solid black;
+            padding: 10px;
+        
+        }
+        .cantenar:hover a{
+            transform: translateY(0%);
+            top: 255px;
+        }
+        .main-box{
+            position: relative;
+            overflow: hidden;
+        }
+        .pro-det{
+            text-align: center;
+        }
+        .main-box a{
+            transform: translateY(-100%);
+            position: absolute;
+            top: 0px;
+            text-align: center;
+            text-decoration: none;
+            color: aliceblue;
+            border: 1px solid black;
+            width: 100%;
+            padding: 10px 0px 10px 0px;
+            display: inline-block;
+            background-color: rgb(14, 15, 15);
+            transition: 0.3s;
+        }
+        .cart-btn{
+            background-color: rgb(23, 172, 122);
+            color: aliceblue;
+            width: 80%;
+            position: relative;
+            margin: 0px auto 20px;
+            padding: 5px;
+        }
+        .cart-btn::before{
+            content: "";
+            outline: 3px solid rgb(23, 172, 122);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: scale(1);
+            transition: 0.3s;
+        }
+         .cart-btn:hover::before{
+            transform: scale(1.1,1.5);
+            /* outline-offset: 5px; */
+        }
+    
+        .img-box{
+            width: 100%;
+        }
+        .main-box:hover img{
+            transform: rotateY(180deg);
+        }
+        .main-box img{
+            display: block;
+            width: 250px;
+            transition: 1.5s;
+            margin: 0px auto;
+            cursor: pointer;
+        }
+        .new{
+            color: aliceblue;
+            background-color: rgb(243, 92, 92);
+            display: inline-block;
+            padding: 3px 5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="cantenar">
+        <div class="main-box">
+            <div class="new">
+                New
+            </div>
+            <div class="img-box">
+                <img src="./C1.jpg" alt="">
+            </div>
+            <a href="">
+                QUICK VIEW
+            </a>
+            <div class="pro-det">
+                <p>Formal Blue Shirt</p>
+                <p class="price">$45.99 <span><s>$50.99</s></span> </p>
+                <div class="cart-btn">
+                    ADD TO CART
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
