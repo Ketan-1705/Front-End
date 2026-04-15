@@ -1,0 +1,57 @@
+@media only screen and (max-width:1160px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width:768px) {
+    nav .nav-btn .search-btn {
+        display: none;
+    }
+
+    nav .nav-btn .bar-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .header-text {
+        padding: 1px 0px 0px 0px;
+    }
+
+    .header-text h1 {
+        width: 100%;
+    }
+
+    .header-text p {
+        margin: 20px 0px 50px 0px;
+    }
+
+    .header-text button {
+        width: 200px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .col {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width:576px) {
+    .header-text button {
+        width: 150px;
+        margin-bottom: 40px;
+    }
+
+    .header-text p {
+        margin: 20px 0px 25px 0px;
+    }
+    #team .team-text p{
+        width: 88%;
+    }
+}
