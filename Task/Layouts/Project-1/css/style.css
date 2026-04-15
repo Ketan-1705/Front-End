@@ -104,12 +104,14 @@ header {
     padding: 50px 0px;
 
 }
-.team-text{
+
+.team-text {
     text-align: center;
     color: #835e3f;
 }
+
 #team h2 {
-    font-size: clamp(20px,87.8vw, 64px);
+    font-size: clamp(20px, 7.8vw, 64px);
     font-weight: 400;
     font-family: "Calistoga";
     margin: 0px 0px 10px 0px;
@@ -125,7 +127,7 @@ header {
 
 }
 
-.row{
+.row {
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -144,6 +146,7 @@ header {
     font-weight: 500;
     font-family: "Montserrat";
 }
+
 .col p {
     height: 119px;
     font-size: 25px;
@@ -151,6 +154,72 @@ header {
     font-weight: 600;
     font-family: "Nunito";
 }
-#vegan{
-background-color: #f8e0bb;
+
+#vegan {
+    background-color: #f8e0bb;
+}
+
+#food {
+    background-color: #f5f1e4;
+    
+}
+
+.veg-main{
+    display: flex;
+    color: #835e3f;
+    padding: 50px 0px;
+}
+#top{
+    display: flex;
+}
+
+.veg-main h2 {
+    font-size: clamp(20px, 7.8vw, 64px);
+    font-weight: 400;
+    font-family: "Calistoga";
+}
+
+.veg-main {
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.veg-img {
+    width: 50%;
+    justify-items: right;
+}
+
+.veg-det {
+    width: 50%;
+}
+
+.veg-img img {
+    width: 50%;
+}
+
+.veg-main button {
+    border: none;
+    width: 250px;
+    padding: 8px;
+    font-size: clamp(13px, 2.6vw, 25px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    border-radius: 4px;
+    background-color: #716c53;
+}
+
+.veg-det p {
+    margin: 15px 0px;
+    width: 90%;
+    font-size: clamp(15px, 3.4vw, 30px);
+    color: #835e3f;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+#right {
+    text-align: right;
 }

@@ -51,7 +51,32 @@
     .header-text p {
         margin: 20px 0px 25px 0px;
     }
-    #team .team-text p{
+
+    #team .team-text p {
         width: 88%;
+    }
+
+    .veg-main {
+        display: block;
+    }
+
+    .veg-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .veg-det {
+        width: 100%;
+        text-align: center;
+    }
+
+    .veg-img img {
+        width: 40%;
+    }
+    #top{
+        flex-direction: column-reverse;
+    }
+    #right{
+        text-align: center;
     }
 }
