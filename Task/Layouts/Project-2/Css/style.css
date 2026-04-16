@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Edwardian';
+    src: url('../Fonts/edwardian.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .top-round {
+    height: 50px;
+    background-color: #7e8b6b;
+    border-radius: 50%;
+    margin-top: -25px;
+}
+
+nav .nav-logo {
+    width: 100px;
+}
+
+nav .nav-logo img {
+    width: 100%;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.nav-main ul {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+.nav-main ul li {
+    list-style: none;
+    font-size: 20px;
+    font-family: "Gill Sans";
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-main ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-main ul li a:hover {
+    color: #7e8b6b;
+}
+
+.nav-main .search-box {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+}
+
+.nav-main .search-box input {
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav-main .search-box input:focus-visible {
+    outline: none;
+}
+
+.nav-main .search-box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header main Start */
+header .box-1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+header .box-1 .flag-img {
+    margin: 0 auto;
+    width: 30px;
+}
+
+header .box-1 .flag-img img {
+    width: 100%;
+}
+
+header .box-1 .title-1 {
+    font-size: 50px;
+    padding: 20px;
+    letter-spacing: 9px;
+    text-transform: none;
+    color: #fff3f3;
+    font-family: "Edwardian";
+    text-align: center;
+    padding: 15px;
+}
+
+header .box-1 .title-2 {
+    font-size: 50px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    color: #fff3f3;
+    font-family: "Big Shoulders";
+    text-align: center;
+}
+
+header .box-1 .title-3 p{
+    padding: 20px;
+    font-size: 27px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: #fff3f3;
+    font-weight: 300;
+    font-family: math;
+    text-align: center;
+}
+.box-1::before {
+    position: absolute;
+    content: "";
+    top: 157px;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/header-1.png);
+    background-size: cover;
+    border: 10px solid #7e8b6b;
+    border-radius: 50%;
+    background-position: left;
+    transform: rotate(190deg);
+}
+/* Header main End */

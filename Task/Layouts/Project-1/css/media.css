@@ -32,12 +32,15 @@
     }
 
     .row {
-        display: block;
+        flex-direction: column;
     }
 
     .col {
         width: 80%;
         margin: 0 auto;
+    }
+    .data{
+        margin: 20px;
     }
 }
 
