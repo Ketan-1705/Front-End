@@ -2,7 +2,10 @@
     font-family: 'Edwardian';
     src: url('../Fonts/edwardian.ttf') format('truetype');
 }
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Supermercado+One&display=swap');
+
+
 
 * {
     margin: 0;
@@ -12,12 +15,31 @@
 
 body {
     background-color: #1a1a1a;
+
+}
+
+header {
     overflow: hidden;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.btn-box {
+    text-align: right;
+}
+
+.btn {
+    background-color: #7e8b6b;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 31px 0px;
+    text-transform: uppercase;
 }
 
 header .top-round {
@@ -107,7 +129,7 @@ header .box-1 .flag-img img {
 
 header .box-1 .title-1 {
     font-size: 50px;
-    padding: 20px;
+    padding: 30px;
     letter-spacing: 9px;
     text-transform: none;
     color: #fff3f3;
@@ -118,23 +140,24 @@ header .box-1 .title-1 {
 
 header .box-1 .title-2 {
     font-size: 50px;
-    letter-spacing: 12px;
+    letter-spacing: 13px;
     text-transform: uppercase;
     color: #fff3f3;
-    font-family: "Big Shoulders";
+    font-family: "Saira Stencil", sans-serif;
     text-align: center;
 }
 
-header .box-1 .title-3 p{
-    padding: 20px;
+header .box-1 .title-3 p {
+    padding: 30px;
     font-size: 27px;
-    letter-spacing: 15px;
+    letter-spacing: 17px;
     text-transform: uppercase;
     color: #fff3f3;
     font-weight: 300;
-    font-family: math;
+    font-family: "Big Shoulders", sans-serif;
     text-align: center;
 }
+
 .box-1::before {
     position: absolute;
     content: "";
@@ -149,4 +172,192 @@ header .box-1 .title-3 p{
     background-position: left;
     transform: rotate(190deg);
 }
+
+header .box-1 .title-img {
+    margin-top: 37px;
+    width: 217px;
+    margin: 0 auto;
+}
+
 /* Header main End */
+/* Header 2 Start */
+header .about-us {
+    width: 65%;
+    margin: 140px 0;
+    position: relative;
+}
+
+.about-title {
+    font-size: 40px;
+    color: #fff;
+    font-family: "Big Shoulders", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.about-text p {
+    color: #fff;
+    font-family: "Supermercado One", sans-serif;
+    letter-spacing: 3px;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.about-us .btn {
+    text-align: right;
+}
+
+.about-us::after {
+    position: absolute;
+    content: "";
+    top: -125px;
+    right: -731px;
+    width: 500px;
+    height: 500px;
+    background-image: url(../image/header-2.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    border: 10px solid #7e8b6b;
+    border-radius: 50%;
+    background-position: -534px;
+    /* transform: rotate(190deg); */
+}
+
+/* Header 2 End */
+/* Menu Start */
+#menu .menu-main {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+#menu .menu-main .menu-box {
+    background-color: #7e8b6b2d;
+    width: 29%;
+    padding: 20px 10px;
+    height: 550px;
+}
+
+#menu .menu-main #box-2 {
+    margin-top: 75px;
+}
+
+#menu .menu-main #box-3 {
+    margin-top: 150px;
+}
+
+.menu-box .menu-img img {
+    width: 100%;
+}
+
+.menu-box .menu-img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-box .menu-title p {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.menu-box .menu-title hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.menu-box .menu-dec {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 20px auto;
+    width: 85%;
+}
+
+/* Menu End */
+/* offer Start */
+#offer {
+    display: flex;
+    position: relative;
+}
+
+#offer .offer-img img {
+    width: 100%;
+}
+
+#offer .offer-img {
+    margin-left: -145px;
+    position: absolute;
+    left: 0;
+    width: 500px;
+}
+
+.offer-data {
+    width: 99%;
+    margin-top: 50px;
+    background-color: #902424;
+}
+
+#offer .offer-card {
+    padding: 50px 10% 20px 0px;
+    text-align: right;
+}
+
+.offer-card span {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.offer-card .offer-title span {
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    background: transparent;
+}
+
+.offer-card p {
+    color: black;
+    font-weight: 500;
+    word-spacing: 11px;
+    font-size: 60px;
+}
+
+.offer-card span {
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.offer-card a {
+    padding: 10px 20px;
+    background-color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    display: inline-block;
+}
+
+/* offer End */
+/* Fresh Start */
+
+#fresh{
+    margin: 50px 0px;
+    position: relative;
+}
+#fresh::after {
+    content: "";
+    background-image: url(../image/fresh-1.png);
+    background-size: cover;
+    width: 500px;
+    height: 754px;
+    z-index: -1;
+    position: absolute;
+    top: -125px;
+    right: 0;
+}
+#fresh .fresh-data{
+    width: 300px;
+    color: #fff;
+}
+/* Fresh End */
