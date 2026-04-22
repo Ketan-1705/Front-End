@@ -175,7 +175,6 @@ header .box-1 .title-3 p {
 
 header .box-1 .title-img {
     margin-top: 37px;
-    width: 217px;
     margin: 0 auto;
 }
 
@@ -341,10 +340,12 @@ header .about-us {
 /* offer End */
 /* Fresh Start */
 
-#fresh{
+#fresh {
     margin: 50px 0px;
     position: relative;
+    padding-bottom: 126px;
 }
+
 #fresh::after {
     content: "";
     background-image: url(../image/fresh-1.png);
@@ -356,8 +357,128 @@ header .about-us {
     top: -125px;
     right: 0;
 }
-#fresh .fresh-data{
-    width: 300px;
+
+#fresh .fresh-data {
+    width: 500px;
     color: #fff;
 }
+
+.fresh-data .fresh-title p {
+    margin: 20px 0px;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+.fresh-des p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 30px 0;
+}
+
+.fresh-img img {
+    width: 80%;
+}
+
+.fresh-img {
+    margin: 20px auto;
+    width: 300px;
+}
+
+.fresh-img-2 {
+    margin: -24% 90%;
+}
+
 /* Fresh End */
+/* taste Start */
+section#taste {
+    margin: 20px 0px;
+}
+#taste .taste-title{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #b60e0e;
+}
+#taste .taste-main{
+    border: 2px solid #fff;
+    padding: 40px;
+    display: flex;
+    margin: 30px 0;
+    gap: 30px;
+}
+.taste-main .taste-box-1{
+    width: 50%;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.taste-main .taste-box-2{
+    width: 50%;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 20px;
+    
+}
+.taste-btn{
+    text-align: center;
+    margin-top: -50px;
+}
+.taste-btn button{
+    background-color: #1a1a1a;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+/* taste End */
+/* Food Start */
+#food .food-main{
+    display: flex;
+    gap: 70px;
+    margin: 100px 0px;
+    justify-content: center;
+}
+
+.food-main .food-box{
+    
+    background-color: #fff3f32f;
+    text-align: center;
+    padding: 20px;
+}
+.food-box .food-img{
+    width: 250px;
+    margin: 0 auto;
+}
+.food-box .food-img img{
+    width: 100%;
+}
+.food-box .food-title{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.food-title hr{
+    width: 80%;
+    margin: 10px auto;
+}
+.food-box .food-des{
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 2px;
+        width: 275px;
+        font-size: 18px;
+}
+/* Food End */
+/* only background Start */
+.background{
+    background-image: url(../image/background.png);
+    background-size: 100%;
+    height: 500px;
+}
+/* only background Start */
+/* Know Start */
+#know{
+    margin: 20px 0;
+}
+/* Know End */
