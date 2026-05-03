@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketan S Goswami | Full Stack Developer</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Floating Background Shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top glass">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ketan Goswami</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero text-center" id="home">
+        <img src="hero_bg.png" alt="Background" class="hero-bg-img" onerror="this.style.display='none'">
+
+        <div class="container position-relative z-1">
+            <div class="profile-container tilt-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare
+                data-tilt-max-glare="0.5" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="profile-glow"></div>
+                <img src="your-photo.jpg" alt="Ketan S Goswami" class="profile-img"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Ketan+Goswami&background=random&size=200'">
+            </div>
+
+            <h1 data-aos="fade-up" data-aos-delay="200">Ketan S Goswami</h1>
+            <h3 id="typing" class="text-gradient" data-aos="fade-up" data-aos-delay="300"></h3>
+
+            <div class="mt-4" data-aos="fade-up" data-aos-delay="400">
+                <a href="Ketan_CV.pdf" download class="btn-custom me-3">
+                    <i class="bi bi-download me-2"></i> Download CV
+                </a>
+                <a href="#contact" class="btn-custom me-3"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
+                    Let's Talk
+                </a>
+                <a href="https://github.com/Ketan-1705" target="_blank" class="text-white fs-3 mx-2"
+                    style="transition: color 0.3s;" onmouseover="this.style.color='var(--accent-1)'"
+                    onmouseout="this.style.color='white'"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/ketan-goswami-0251b9404?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank" class="text-white fs-3 mx-2" style="transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--accent-1)'" onmouseout="this.style.color='white'"><i
+                        class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2>About Me</h2>
+                    <div class="glass-card tilt-card" data-tilt data-tilt-max="5" data-tilt-glare
+                        data-tilt-max-glare="0.2">
+                        <p class="lead mb-0 text-muted" style="text-align: justify;">
+                            I am a passionate and detail-oriented Full Stack Developer with a strong foundation in
+                            Python, Django, and modern web technologies like React.js and Bootstrap. My journey in tech
+                            began with a deep curiosity for how things work on the web, which led me to pursue a Full
+                            Stack Development course at Tops Technologies, building upon my Diploma in Information
+                            Technology.
+                            <br><br>
+                            I thrive on solving complex problems and transforming ideas into functional, user-friendly
+                            applications. Having a background in Marketing and Management at Siddhivinayak has equipped
+                            me with unique insights into user behavior, client communication, and effective project
+                            execution. I am currently seeking an opportunity to leverage my technical skills and
+                            professional background to build exceptional digital experiences and grow within a dynamic
+                            development team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-filetype-html fs-2 d-block mb-2 text-primary"></i>HTML5</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-filetype-css fs-2 d-block mb-2 text-info"></i>CSS3</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-filetype-js fs-2 d-block mb-2 text-warning"></i>JavaScript</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-bootstrap fs-2 d-block mb-2" style="color: #7952b3;"></i>Bootstrap</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-code-slash fs-2 d-block mb-2 text-info"></i>React.js</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-filetype-py fs-2 d-block mb-2 text-primary"></i>Python</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-server fs-2 d-block mb-2 text-success"></i>Django</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-filetype-php fs-2 d-block mb-2" style="color: #777bb3;"></i>PHP</div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <h2>Soft Skills</h2>
+            </div>
+            <div class="skills-grid mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-chat-dots fs-2 d-block mb-2 text-info"></i>Communication</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-people fs-2 d-block mb-2 text-primary"></i>Collaboration</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-clock-history fs-2 d-block mb-2 text-warning"></i>Time Mgmt</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-lightbulb fs-2 d-block mb-2 text-success"></i>Analytical</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-person-up fs-2 d-block mb-2 text-danger"></i>Leadership</div>
+                <div class="skill-item tilt-card" data-tilt data-tilt-max="20" data-tilt-glare><i
+                        class="bi bi-puzzle fs-2 d-block mb-2" style="color: #9c27b0;"></i>Problem Solving</div>
+            </div>
+
+            <div class="row mt-5 text-center justify-content-center" data-aos="fade-up">
+                <div class="col-md-8 mb-4">
+                    <h4 class="mb-4">Core Strengths</h4>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <span class="badge rounded-pill bg-primary bg-opacity-25 border border-primary p-2 px-3">Quick
+                            Learner</span>
+                        <span
+                            class="badge rounded-pill bg-success bg-opacity-25 border border-success p-2 px-3">Self-motivated</span>
+                        <span
+                            class="badge rounded-pill bg-danger bg-opacity-25 border border-danger p-2 px-3">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="row">
+                <!-- Experience -->
+                <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-right">
+                    <h2 class="text-center text-md-start">Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item tilt-card" data-tilt data-tilt-max="5" data-tilt-axis="y">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2 Years Duration</span>
+                                <h4>Marketing & Management</h4>
+                                <h6 class="text-muted mb-3">Siddhivinayak</h6>
+                                <ul class="text-muted mb-0 ps-3">
+                                    <li>Managed daily operations and customer relationships.</li>
+                                    <li>Executed marketing strategies effectively.</li>
+                                    <li>Improved communication and leadership skills.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2 class="text-center text-md-start">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item tilt-card" data-tilt data-tilt-max="5" data-tilt-axis="y">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Currently Pursuing</span>
+                                <h4>Full Stack Development</h4>
+                                <h6 class="text-muted mb-3">Tops Technologies</h6>
+                                <div class="bg-white p-2 rounded mb-3" style="display: inline-block;">
+                                    <img src="https://www.tops-int.com/images/TOPS-logo.png"
+                                        alt="Tops Technologies Logo" style="height: 40px; object-fit: contain;">
+                                </div>
+                                <p class="text-muted small mb-0">
+                                    Intensive training program focusing on modern web development. Covering frontend
+                                    technologies (HTML, CSS, JavaScript, React.js, Bootstrap) and backend frameworks
+                                    (Python, Django). Building real-world projects to gain practical, hands-on
+                                    experience in full-stack architecture and database management.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item tilt-card" data-tilt data-tilt-max="5" data-tilt-axis="y">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2022</span>
+                                <h4>Diploma in Information Technology</h4>
+                                <h6 class="text-muted">Gujarat Technological University</h6>
+                                <p class="text-muted mb-0 small">Hansamukh Goswami College of Engineering</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item tilt-card" data-tilt data-tilt-max="5" data-tilt-axis="y">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2019</span>
+                                <h4>Higher Secondary (HSC)</h4>
+                                <h6 class="text-muted mb-0">Natraj High School</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-6 mb-4" data-aos="zoom-in">
+                    <div class="glass-card p-0 project-card tilt-card h-100" data-tilt data-tilt-max="5" data-tilt-glare
+                        data-tilt-max-glare="0.5">
+                        <div class="project-img-wrapper">
+                            <img src="project_ecommerce.png" alt="E-Commerce Project" class="project-img"
+                                onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80'">
+                            <div class="project-overlay">
+                                <h5>View Live Demo <i class="bi bi-arrow-right"></i></h5>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0">E-Commerce Platform</h4>
+                                <span class="badge bg-primary">Python/Django</span>
+                            </div>
+                            <p class="text-muted">
+                                Developed a complete e-commerce platform featuring secure user authentication, product
+                                listings,
+                                and an order management system. Designed a responsive frontend tailored for seamless
+                                user experience.
+                            </p>
+                            <div class="d-flex gap-2 mt-3">
+                                <span class="badge border border-secondary text-secondary">HTML/CSS</span>
+                                <span class="badge border border-secondary text-secondary">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Coming Soon -->
+                <div class="col-md-6 col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass-card p-0 project-card tilt-card h-100" data-tilt data-tilt-max="5" data-tilt-glare
+                        data-tilt-max-glare="0.5">
+                        <div class="project-img-wrapper">
+                            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.5);"
+                                class="project-img">
+                                <h3 class="text-muted"><i class="bi bi-hourglass-split"></i> Coming Soon</h3>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0">Portfolio Expansion</h4>
+                                <span class="badge bg-warning text-dark">In Progress</span>
+                            </div>
+                            <p class="text-muted">
+                                A dynamic and interactive 3D web experience showcasing advanced frontend skills,
+                                animations, and modern UI/UX design principles.
+                            </p>
+                            <div class="d-flex gap-2 mt-3">
+                                <span class="badge border border-secondary text-secondary">React.js</span>
+                                <span class="badge border border-secondary text-secondary">Three.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Coming Soon -->
+                <div class="col-md-6 col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass-card p-0 project-card tilt-card h-100" data-tilt data-tilt-max="5" data-tilt-glare
+                        data-tilt-max-glare="0.5">
+                        <div class="project-img-wrapper">
+                            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.5);"
+                                class="project-img">
+                                <h3 class="text-muted"><i class="bi bi-hourglass-split"></i> Coming Soon</h3>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0">Inventory Management</h4>
+                                <span class="badge bg-secondary">Planning</span>
+                            </div>
+                            <p class="text-muted">
+                                A robust full-stack application designed to streamline inventory tracking, sales
+                                reporting, and user management for small businesses.
+                            </p>
+                            <div class="d-flex gap-2 mt-3">
+                                <span class="badge border border-secondary text-secondary">Django REST</span>
+                                <span class="badge border border-secondary text-secondary">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Coming Soon -->
+                <div class="col-md-6 col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass-card p-0 project-card tilt-card h-100" data-tilt data-tilt-max="5" data-tilt-glare
+                        data-tilt-max-glare="0.5">
+                        <div class="project-img-wrapper">
+                            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.5);"
+                                class="project-img">
+                                <h3 class="text-muted"><i class="bi bi-hourglass-split"></i> Coming Soon</h3>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0">AI Content Generator</h4>
+                                <span class="badge bg-secondary">Planning</span>
+                            </div>
+                            <p class="text-muted">
+                                Integrating modern LLM APIs to create a seamless tool for generating marketing copy,
+                                blog posts, and social media content automatically.
+                            </p>
+                            <div class="d-flex gap-2 mt-3">
+                                <span class="badge border border-secondary text-secondary">Python</span>
+                                <span class="badge border border-secondary text-secondary">OpenAI API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container text-center" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <p class="text-muted mb-5 max-w-500 mx-auto">I'm currently looking for new opportunities. Whether you have a
+                question or just want to say hi, I'll try my best to get back to you!</p>
+
+            <div class="row justify-content-center gap-4 mb-4">
+                <div class="col-md-3">
+                    <div class="glass-card tilt-card p-4 h-100" data-tilt data-tilt-scale="1.05">
+                        <i class="bi bi-telephone fs-1 text-gradient mb-3"></i>
+                        <h5>Call Me</h5>
+                        <p class="text-muted mb-0">+91 9725666808</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card tilt-card p-4 h-100" data-tilt data-tilt-scale="1.05">
+                        <i class="bi bi-envelope fs-1 text-gradient mb-3"></i>
+                        <h5>Email Me</h5>
+                        <p class="text-muted mb-0">goswamiketan026@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="glass-card tilt-card p-4 h-100" data-tilt data-tilt-scale="1.05">
+                        <i class="bi bi-geo-alt fs-1 text-gradient mb-3"></i>
+                        <h5>Location</h5>
+                        <p class="text-muted mb-0">Ahmedabad, Gujarat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center gap-4">
+                <div class="col-md-4">
+                    <div class="glass-card tilt-card p-4 h-100" data-tilt data-tilt-scale="1.05">
+                        <h5 class="mb-3"><i class="bi bi-github me-2"></i>GitHub</h5>
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/Ketan-1705&color=ffffff&bgcolor=141928"
+                            alt="GitHub QR" class="img-fluid rounded mb-3"
+                            style="border: 2px solid rgba(255,255,255,0.1);">
+                        <br>
+                        <a href="https://github.com/Ketan-1705" target="_blank"
+                            class="btn btn-sm btn-outline-light">Visit GitHub</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card tilt-card p-4 h-100" data-tilt data-tilt-scale="1.05">
+                        <h5 class="mb-3"><i class="bi bi-linkedin me-2 text-primary"></i>LinkedIn</h5>
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.linkedin.com/in/ketan-goswami-0251b9404&color=ffffff&bgcolor=141928"
+                            alt="LinkedIn QR" class="img-fluid rounded mb-3"
+                            style="border: 2px solid rgba(255,255,255,0.1);">
+                        <br>
+                        <a href="https://www.linkedin.com/in/ketan-goswami-0251b9404?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" class="btn btn-sm btn-outline-primary">Visit LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center p-4 border-top" style="border-color: rgba(255,255,255,0.05) !important;">
+        <p class="mb-0 text-muted">© 2026 Ketan S Goswami. Built with passion.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- VanillaTilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+
+        // Initialize VanillaTilt for elements not auto-initialized by data-tilt
+        VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+
+        // Typing Effect
+        const words = ["Full Stack Developer", "Python Enthusiast", "UI/UX Problem Solver"];
+        let i = 0, j = 0, del = false;
+
+        function type() {
+            const typingElement = document.getElementById("typing");
+            if (!typingElement) return;
+
+            let word = words[i];
+            typingElement.innerHTML = word.substring(0, j) + '<span style="border-right: 2px solid var(--accent-1); animation: blink 0.75s step-end infinite;">&nbsp;</span>';
+
+            if (!del) {
+                j++;
+                if (j > word.length) {
+                    del = true;
+                    setTimeout(type, 2000); // Wait before deleting
+                    return;
+                }
+            } else {
+                j--;
+                if (j === 0) {
+                    del = false;
+                    i = (i + 1) % words.length;
+                }
+            }
+
+            setTimeout(type, del ? 50 : 100);
+        }
+
+        // Start typing effect after a short delay
+        setTimeout(type, 1000);
+
+        // Blinking cursor animation
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes blink {
+                from, to { border-color: transparent }
+                50% { border-color: var(--accent-1); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

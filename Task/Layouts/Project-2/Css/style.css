@@ -393,37 +393,43 @@ header .about-us {
 section#taste {
     margin: 20px 0px;
 }
-#taste .taste-title{
+
+#taste .taste-title {
     text-align: center;
     font-size: 40px;
     letter-spacing: 5px;
     color: #b60e0e;
 }
-#taste .taste-main{
+
+#taste .taste-main {
     border: 2px solid #fff;
     padding: 40px;
     display: flex;
     margin: 30px 0;
     gap: 30px;
 }
-.taste-main .taste-box-1{
+
+.taste-main .taste-box-1 {
     width: 50%;
     color: #fff;
     letter-spacing: 3px;
     font-size: 20px;
 }
-.taste-main .taste-box-2{
+
+.taste-main .taste-box-2 {
     width: 50%;
     color: #fff;
     letter-spacing: 3px;
     font-size: 20px;
-    
+
 }
-.taste-btn{
+
+.taste-btn {
     text-align: center;
     margin-top: -50px;
 }
-.taste-btn button{
+
+.taste-btn button {
     background-color: #1a1a1a;
     border: 2px solid #fff;
     color: #fff;
@@ -431,54 +437,118 @@ section#taste {
     font-weight: 700;
     padding: 10px 20px;
 }
+
 /* taste End */
 /* Food Start */
-#food .food-main{
+#food .food-main {
     display: flex;
     gap: 70px;
     margin: 100px 0px;
     justify-content: center;
 }
 
-.food-main .food-box{
-    
+.food-main .food-box {
+
     background-color: #fff3f32f;
     text-align: center;
     padding: 20px;
 }
-.food-box .food-img{
+
+.food-box .food-img {
     width: 250px;
     margin: 0 auto;
 }
-.food-box .food-img img{
+
+.food-box .food-img img {
     width: 100%;
 }
-.food-box .food-title{
+
+.food-box .food-title {
     margin-top: 20px;
     font-size: 30px;
     color: #fff;
 }
-.food-title hr{
+
+.food-title hr {
     width: 80%;
     margin: 10px auto;
 }
-.food-box .food-des{
+
+.food-box .food-des {
     color: #fff;
     padding: 10px;
     letter-spacing: 2px;
-        width: 275px;
-        font-size: 18px;
+    width: 275px;
+    font-size: 18px;
 }
+
 /* Food End */
 /* only background Start */
-.background{
+.background {
     background-image: url(../image/background.png);
     background-size: 100%;
     height: 500px;
 }
+
 /* only background Start */
 /* Know Start */
-#know{
+#know {
     margin: 20px 0;
 }
+
+.know-main {
+    display: flex;
+    text-align: right;
+    color: #fff;
+}
+.know-main .know-des{
+    margin-top: 50px;
+}
+.know-main .know-des span{
+    margin: 20px 0px;
+    font-size: 40px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+.know-main .know-des p{
+   font-size: 20px;
+    letter-spacing: 3px;
+    padding: 30px 0px 30px 140px;
+}
+
 /* Know End */
+/* Icon Start */
+.main-icon{
+    margin: 100px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.main-icon .icon-box{
+    text-align: center;
+    color: #fff;
+}
+.icon-box .icon-title p{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.icon-box .icon-ces p{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.icon-box .icon-img img{
+width: 60PX;
+height: 60PX;
+margin: 20PX 10PX;
+}
+/* Icon End */
+.background-2{
+    background-image: url(../image/footer.png);
+    background-size: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+/* Footer Start */
+
+/* Footer end */

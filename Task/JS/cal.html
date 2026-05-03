@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glass Apple Calculator</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        /* Glass container */
+        .calculator {
+            width: 320px;
+            padding: 15px;
+            border-radius: 25px;
+            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Display */
+        .display {
+            color: #fff;
+            font-size: 55px;
+            text-align: right;
+            padding: 15px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+            overflow-x: auto;
+        }
+
+        /* Buttons grid */
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        /* Buttons base */
+        button {
+            height: 70px;
+            border-radius: 50%;
+            border: none;
+            font-size: 22px;
+            color: white;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.12);
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* Special buttons */
+        .gray {
+            background: rgba(200, 200, 200, 0.6);
+            color: black;
+        }
+
+        .orange {
+            background: rgba(255, 149, 0, 0.9);
+        }
+
+        .orange:hover {
+            background: rgba(255, 149, 0, 1);
+        }
+
+        /* Zero button */
+        .zero {
+            grid-column: span 2;
+            border-radius: 40px;
+            text-align: left;
+            padding-left: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div id="display" class="display"></div>
+
+        <div class="buttons">
+            <button class="gray" onclick="clearDisplay()">AC</button>
+            <button class="gray" onclick="">+/-</button>
+            <button class="gray" onclick="">%</button>
+            <button class="orange" onclick="number('/')">÷</button>
+
+            <button onclick="number('7')">7</button>
+            <button onclick="number('8')">8</button>
+            <button onclick="number('9')">9</button>
+            <button class="orange" onclick="number('*')">×</button>
+
+            <button onclick="number('4')">4</button>
+            <button onclick="number('5')">5</button>
+            <button onclick="number('6')">6</button>
+            <button class="orange" onclick="number('-')">−</button>
+
+            <button onclick="number('1')">1</button>
+            <button onclick="number('2')">2</button>
+            <button onclick="number('3')">3</button>
+            <button class="orange" onclick="number('+')">+</button>
+
+            <button class="zero" onclick="number('0')">0</button>
+            <button onclick="">.</button>
+            <button class="orange" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        let main_num=document.getElementById("display")
+        function number(num){
+            main_num.innerHTML += num
+            // num.value += num
+        }
+
+        function calculate(){
+            main_num.innerHTML = eval(main_num.innerHTML)
+        }
+
+        function clearDisplay(){
+            main_num.innerHTML = ""
+        }
+    </script>
+
+</body>
+
+</html>
